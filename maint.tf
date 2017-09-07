@@ -45,25 +45,25 @@ module "user-config" {
     source = "./modules/user-config"
     tenancy_ocid = "${var.tenancy_ocid}"
     compartment_ocid = "${var.compartment_ocid}"
-	AD1 node-1-public-ip = "${module.node-1.public_ip}"
-    AD2 node-2-public-ip = "${module.node-2.public_ip}"
-    AD3 node-3-public-ip = "${module.node-3.public_ip}"
+	node-1-public-ip = "${module.node-1.public_ip}"
+        node-2-public-ip = "${module.node-2.public_ip}"
+        node-3-public-ip = "${module.node-3.public_ip}"
 
     
 	}
 
 
 
-output "Node-1 PublicIP" {
+output "AD1 Node-1 PublicIP" {
   value = "${module.node-1.public_ip}"
 }
 
 
-output "Node-2 PublicIP" {
+output "AD2 Node-2 PublicIP" {
   value = "${module.node-2.public_ip}"
   }
 
-output "Node-3 PublicIP" {
+output "AD3 Node-3 PublicIP" {
   value = "${module.node-3.public_ip}"
 }
 
