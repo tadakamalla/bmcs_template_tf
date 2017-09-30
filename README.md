@@ -1,4 +1,4 @@
-# bmcs_template_tf
+# oci_template_tf
 # Software Requirements
 
 To run this you must have installed the Terraform binary (at least 0.9.x) and configured it per instruction.
